@@ -3,7 +3,7 @@
 
   // ── Configuration ──────────────────────────────────────────────────────────
   // Change this to your deployed server URL once hosted
-  var API_URL = 'http://localhost:3000/api/chat';
+  var API_URL = 'https://buybuddy-production.up.railway.app/api/chat';
   var BOT_NAME = 'BuyBuddy';
   var WELCOME_MSG = 'Hi! I\'m BuyBuddy, your shopping assistant. Ask me about products, check an order, or anything else I can help with!';
 
