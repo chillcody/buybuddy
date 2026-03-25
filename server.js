@@ -51,7 +51,7 @@ app.get('/health', (_req, res) => {
   });
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log('BuyBuddy Chatbot Server');
   console.log(`Running on: http://localhost:${PORT}`);
   console.log(`Store: ${process.env.SHOPIFY_STORE_URL || 'NOT SET — add to .env'}`);
