@@ -3,8 +3,8 @@
 
   // ── Configuration ──────────────────────────────────────────────────────────
   var API_URL = 'https://buybuddy-production.up.railway.app/api/chat';
-  var BOT_NAME = 'P1 Peptides Assistant';
-  var WELCOME_MSG = 'Hi! I\'m the P1 Peptides Assistant. Ask me about our research peptides, check an order, or anything else I can help with!';
+  var BOT_NAME = 'P1 Peptides AI';
+  var WELCOME_MSG = 'Hello! I\'m the AI assistant for P1 Peptides. I can help you find the right peptides, check your order status, or answer any questions about our products. How can I help you today?';
 
   // ── State ──────────────────────────────────────────────────────────────────
   var conversationId = null;
