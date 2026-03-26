@@ -45,7 +45,7 @@ app.use('/api', chatRouter);
 app.get('/health', (_req, res) => {
   res.json({
     status: 'ok',
-    model: process.env.CLAUDE_MODEL,
+    model: process.env.GEMINI_MODEL,
     store: process.env.SHOPIFY_STORE_URL || 'not configured',
     shopify_token: process.env.SHOPIFY_ACCESS_TOKEN ? 'set' : 'MISSING',
   });

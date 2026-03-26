@@ -1,70 +1,51 @@
-import Anthropic from '@anthropic-ai/sdk';
-import { tools } from '../tools/definitions.js';
+import { GoogleGenerativeAI } from '@google/generative-ai';
+import { geminiTools } from '../tools/definitions.js';
 import { executeTool } from '../tools/executor.js';
 import { systemPrompt } from '../config/prompts.js';
 
-const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
-const MODEL = process.env.CLAUDE_MODEL || 'claude-haiku-4-5';
-const MAX_TOOL_ROUNDS = 5; // prevent infinite loops
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+const MODEL = process.env.GEMINI_MODEL || 'gemini-2.0-flash';
+const MAX_TOOL_ROUNDS = 5;
 
 export async function chatWithClaude(userMessage, history) {
-  const messages = [
-    ...history,
-    { role: 'user', content: userMessage },
-  ];
-
-  let response = await client.messages.create({
+  const model = genAI.getGenerativeModel({
     model: MODEL,
-    max_tokens: 1024,
-    system: systemPrompt,
-    tools,
-    messages,
+    systemInstruction: systemPrompt,
+    tools: [{ functionDeclarations: geminiTools }],
   });
+
+  const chat = model.startChat({ history });
+
+  let result = await chat.sendMessage(userMessage);
+  let response = result.response;
 
   let rounds = 0;
 
-  // Tool-use loop: Claude may call tools multiple times before giving a final answer
-  while (response.stop_reason === 'tool_use' && rounds < MAX_TOOL_ROUNDS) {
+  // Tool-use loop: Gemini may call tools before giving a final answer
+  while (rounds < MAX_TOOL_ROUNDS) {
+    const calls = response.functionCalls();
+    if (!calls || calls.length === 0) break;
     rounds++;
 
-    // Collect all tool_use blocks (Claude can request multiple tools at once)
-    const toolBlocks = response.content.filter((b) => b.type === 'tool_use');
-
-    // Execute all tool calls (in parallel for speed)
     const toolResults = await Promise.all(
-      toolBlocks.map(async (block) => {
-        console.log(`[Tool] ${block.name}(${JSON.stringify(block.input)})`);
-        const result = await executeTool(block.name, block.input);
+      calls.map(async (call) => {
+        console.log(`[Tool] ${call.name}(${JSON.stringify(call.args)})`);
+        const res = await executeTool(call.name, call.args);
         return {
-          type: 'tool_result',
-          tool_use_id: block.id,
-          content: JSON.stringify(result),
+          functionResponse: {
+            name: call.name,
+            response: { result: res },
+          },
         };
       })
     );
 
-    // Append assistant response and tool results to the conversation
-    messages.push({ role: 'assistant', content: response.content });
-    messages.push({ role: 'user', content: toolResults });
-
-    // Ask Claude again with the tool results
-    response = await client.messages.create({
-      model: MODEL,
-      max_tokens: 1024,
-      system: systemPrompt,
-      tools,
-      messages,
-    });
+    result = await chat.sendMessage(toolResults);
+    response = result.response;
   }
 
-  // Extract final text reply
-  const reply = response.content
-    .filter((b) => b.type === 'text')
-    .map((b) => b.text)
-    .join('');
+  const reply = response.text();
+  const updatedHistory = await chat.getHistory();
 
-  // Add this exchange to history
-  messages.push({ role: 'assistant', content: reply });
-
-  return { reply, updatedHistory: messages };
+  return { reply, updatedHistory };
 }
