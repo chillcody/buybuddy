@@ -15,6 +15,12 @@ export function getSession(id) {
   return s.messages;
 }
 
+export function getSessionMessageCount(id) {
+  const s = sessions.get(id);
+  if (!s || Date.now() > s.expiresAt) return 0;
+  return s.messages.length;
+}
+
 export function saveSession(id, messages) {
   sessions.set(id, {
     messages: messages.slice(-MAX_MESSAGES),
