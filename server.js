@@ -57,4 +57,17 @@ app.listen(PORT, '0.0.0.0', () => {
   console.log(`Store: ${process.env.SHOPIFY_STORE_URL || 'NOT SET — add to .env'}`);
   console.log(`Token: ${process.env.SHOPIFY_ACCESS_TOKEN ? 'OK' : 'MISSING — run: npm run get-token'}`);
   console.log(`Widget: http://localhost:${PORT}/widget/chatbot.js`);
+
+  // List available Gemini models for this API key
+  fetch(`https://generativelanguage.googleapis.com/v1beta/models?key=${process.env.GEMINI_API_KEY}`)
+    .then(r => r.json())
+    .then(data => {
+      if (data.error) {
+        console.error('Gemini API key error:', data.error.message);
+      } else {
+        const names = (data.models || []).map(m => m.name).join(', ');
+        console.log('Available Gemini models:', names || 'NONE');
+      }
+    })
+    .catch(err => console.error('Could not list Gemini models:', err.message));
 });
