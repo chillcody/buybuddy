@@ -72,8 +72,11 @@ router.post('/chat', async (req, res) => {
 
     res.json({ conversationId: sessionId, reply });
   } catch (err) {
-    console.error('Chat error:', err);
-    res.status(500).json({ error: 'Something went wrong. Please try again.' });
+    console.error('Chat error:', err?.message || err);
+    const userMsg = err?.status === 429
+      ? 'The AI service is temporarily busy. Please try again in a moment.'
+      : 'Something went wrong. Please try again.';
+    res.status(500).json({ error: userMsg });
   }
 });
 

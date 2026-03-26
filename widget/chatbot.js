@@ -206,7 +206,8 @@
         body: JSON.stringify({ message: text, conversationId: conversationId }),
       });
 
-      var data = await res.json();
+      var data;
+      try { data = await res.json(); } catch (e) { data = {}; }
 
       if (!res.ok) {
         appendMsg('bot', data.error || 'Something went wrong. Please try again.');
