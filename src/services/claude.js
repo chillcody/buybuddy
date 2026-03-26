@@ -47,11 +47,10 @@ const tools = [
 ];
 
 export async function chatWithClaude(userMessage, history) {
-  const model = genAI.getGenerativeModel({
-    model: MODEL,
-    systemInstruction: systemPrompt,
-    tools,
-  });
+  const model = genAI.getGenerativeModel(
+    { model: MODEL, systemInstruction: systemPrompt, tools },
+    { apiVersion: 'v1' }
+  );
 
   const chat = model.startChat({ history });
 
