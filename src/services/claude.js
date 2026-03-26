@@ -1,45 +1,42 @@
 import { systemPrompt } from '../config/prompts.js';
 
-const API_KEY = process.env.GEMINI_API_KEY;
-const MODEL = process.env.GEMINI_MODEL || 'gemini-pro';
-const BASE_URL = 'https://generativelanguage.googleapis.com/v1beta/models';
+const GROQ_API_KEY = process.env.GROQ_API_KEY;
+const MODEL = process.env.GROQ_MODEL || 'llama-3.3-70b-versatile';
+const GROQ_URL = 'https://api.groq.com/openai/v1/chat/completions';
 
 export async function chatWithClaude(userMessage, history) {
-  // Convert stored history to Gemini REST format
-  const contents = [
+  const messages = [
+    { role: 'system', content: systemPrompt },
     ...history,
-    { role: 'user', parts: [{ text: userMessage }] },
+    { role: 'user', content: userMessage },
   ];
 
-  const body = {
-    system_instruction: { parts: [{ text: systemPrompt }] },
-    contents,
-    generationConfig: {
-      maxOutputTokens: 1024,
-      temperature: 0.7,
+  const res = await fetch(GROQ_URL, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${GROQ_API_KEY}`,
     },
-  };
-
-  const res = await fetch(
-    `${BASE_URL}/${MODEL}:generateContent?key=${API_KEY}`,
-    {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(body),
-    }
-  );
+    body: JSON.stringify({
+      model: MODEL,
+      messages,
+      max_tokens: 1024,
+      temperature: 0.7,
+    }),
+  });
 
   if (!res.ok) {
     const err = await res.text();
-    throw new Error(`Gemini API error ${res.status}: ${err}`);
+    throw new Error(`Groq API error ${res.status}: ${err}`);
   }
 
   const data = await res.json();
-  const reply = data.candidates?.[0]?.content?.parts?.[0]?.text || 'Sorry, I could not generate a response.';
+  const reply = data.choices?.[0]?.message?.content || 'Sorry, I could not generate a response.';
 
   const updatedHistory = [
-    ...contents,
-    { role: 'model', parts: [{ text: reply }] },
+    ...history,
+    { role: 'user', content: userMessage },
+    { role: 'assistant', content: reply },
   ];
 
   return { reply, updatedHistory };
