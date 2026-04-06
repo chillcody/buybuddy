@@ -29,27 +29,29 @@ COMPLETE PRODUCT CATALOG WITH PRICES
 
 BPC-157 10mg — $100.00
 Form: Injectable (lyophilized powder)
-URL: https://p1peptides.com/products/bpc-157-10mg
+URL: https://p1peptides.com/products/bpc-157
 Research: Synthetic 15-amino acid pentadecapeptide derived from human Body Protection Compound. Studied for cytoprotective and regenerative properties. Key research areas: GI mucosal healing, tendon/ligament repair, bone healing, wound healing & angiogenesis (VEGF pathway), skeletal muscle repair, neuroprotection, anti-inflammatory signaling (NO, FAK/paxillin). Also known as PL-14736, Pentadecapeptide.
 
 BPC-157 Capsules (500mcg × 60) — $125.00
 Form: Oral capsule (enteric-coated)
-URL: https://p1peptides.com/products/bpc-157-capsules
+URL: https://p1peptides.com/products/bpc-157-500mcg-x-60-enteric-capsules
 Research: Oral formulation of BPC-157. Enteric coating protects from gastric acid. Used in oral bioavailability studies, GI mucosal protection research.
 
 BPC/TB Blend (BPC-157 + TB-500) — 10mg: $120.00 | 20mg: $200.00
 Form: Injectable (lyophilized powder)
-URL: https://p1peptides.com/products/bpc-tb-blend
+URL 10mg: https://p1peptides.com/products/bpc-tb
+URL 20mg: https://p1peptides.com/products/bpc-tb-20mg
 Research: Synergistic blend. BPC-157 contributes GI cytoprotection and VEGF/NO signaling; TB-500 contributes actin-sequestering and angiogenic properties. Used for combined tissue regeneration, musculoskeletal repair, wound healing research.
 
 TB-500 (Thymosin Beta-4) — 5mg: $85.00 | 10mg: $165.00
 Form: Injectable (lyophilized powder)
-URL: https://p1peptides.com/products/tb-500-thymosin-beta-4
+URL 5mg: https://p1peptides.com/products/tb-500
+URL 10mg: https://p1peptides.com/products/tb-500-10mg
 Research: Synthetic analog of the naturally occurring 43-amino acid Thymosin Beta-4. Studied for actin-sequestering properties, angiogenic signaling, cell migration and tissue regeneration. Key applications: wound healing, cardiac repair, tendon/ligament models, anti-inflammatory pathway research, corneal repair. Also known as TB4, Thymosin β4.
 
 GHK-Cu 75mg (Injectable) — $70.00
 Form: Injectable (lyophilized powder)
-URL: https://p1peptides.com/products/ghk-cu-75mg
+URL: https://p1peptides.com/products/ghk-cu
 Research: Copper-peptide complex (Gly-His-Lys + Cu²⁺). Research areas: extracellular matrix remodeling (collagen/elastin), antioxidant response, anti-inflammatory cytokine pathways (IL-6, TNF), DNA repair, copper homeostasis, wound healing & angiogenesis. Also known as Copper GHK, Copper peptide, Lamin.
 
 GHK-Cu Capsules (2mg × 50) — $165.00
@@ -59,36 +61,40 @@ Research: Oral copper-peptide delivery models, extracellular matrix & tissue rem
 
 GHK/BPC/TB Triple Blend 70mg — $490.00
 Form: Injectable (lyophilized powder)
-URL: https://p1peptides.com/products/ghk-bpc-tb-70mg
+URL: https://p1peptides.com/products/ghk-bpc-tb
 Research: Triple-combination of GHK-Cu + BPC-157 + TB-500. Multi-pathway tissue regeneration, synergistic wound healing, combined angiogenesis & ECM remodeling, comprehensive musculoskeletal repair.
 
 --- WEIGHT LOSS & METABOLIC / GLP-1 PEPTIDES ---
 
 Semaglutide — 10mg: $255.00 | 20mg: $345.00
 Form: Injectable (lyophilized powder)
-URL: https://p1peptides.com/products/semaglutide
+URL 10mg: https://p1peptides.com/products/semaglutide
+URL 20mg: https://p1peptides.com/products/semaglutide-20mg
 Research: Synthetic GLP-1 analog (GLP-1R agonist). Extended half-life via fatty acid conjugation. Research: glucose homeostasis, insulin secretion, appetite regulation via CNS signaling, adipose tissue metabolism, gastric emptying, cardiovascular risk-factor research. Also known as GLP-1 analog.
 
 Retatrutide — 10mg: $230.00 | 20mg: $350.00
 Form: Injectable (lyophilized powder)
-URL: https://p1peptides.com/products/retatrutide
+URL 10mg: https://p1peptides.com/products/retatrutide
+URL 20mg: https://p1peptides.com/products/retatrutide-20mg
 Research: Novel tri-agonist peptide targeting GLP-1R, GIP receptor (GIPR), and Glucagon receptor (GCGR). Research: energy balance, metabolic regulation, adipose tissue reduction, hepatic steatosis, multi-hormone metabolic interaction studies. Also known as LY3437943, Triple agonist.
 
 Tirzepatide — 10mg: $200.00 | 20mg: $325.00 | 40mg: $395.00
 Form: Injectable (lyophilized powder)
-URL: https://p1peptides.com/products/tirzepatide
+URL 10mg: https://p1peptides.com/products/tirzepatide-10mg
+URL 20mg: https://p1peptides.com/products/tirzepatide-20mg
+URL 40mg: https://p1peptides.com/products/tirzepatide-40mg
 Research: Dual GIP/GLP-1 agonist (39 amino acids). Research: dual incretin receptor signaling, insulin secretion & sensitization, glucagon suppression, energy homeostasis, adipose metabolism. Also known as LY3298176.
 
 MOTS-c 10mg — $110.00
 Form: Injectable (lyophilized powder)
-URL: https://p1peptides.com/products/mots-c-10mg
+URL: https://p1peptides.com/products/mots-c
 Research: 16-amino acid mitochondria-derived peptide with exercise-mimetic properties. Research: mitochondrial biogenesis & function, insulin sensitivity & glucose metabolism, AMPK pathway activation, skeletal muscle metabolism, aging-related metabolic decline models.
 
 --- GROWTH HORMONE SECRETAGOGUES ---
 
 CJC-1295 DAC 5mg — $49.50
 Form: Injectable (lyophilized powder)
-URL: https://p1peptides.com/products/cjc-1295-dac-5mg
+URL: https://p1peptides.com/products/cjc-1295-dac
 Research: GHRH analog with Drug Affinity Complex (DAC) for covalent albumin binding. Extends plasma half-life to ~6–8 days. Research: sustained GH axis stimulation, somatotropic axis & IGF-1 production, GH pulse dynamics. Also known as CJC-1295 with DAC, DAC:GRF.
 
 CJC-1295 no DAC 5mg — $65.00
@@ -98,41 +104,41 @@ Research: 29-amino acid truncated GHRH analog, half-life ~30 minutes preserving 
 
 Ipamorelin 5mg — $46.00
 Form: Injectable (lyophilized powder)
-URL: https://p1peptides.com/products/ipamorelin-5mg
+URL: https://p1peptides.com/products/ipamorelin
 Research: Selective 5-amino acid GHS-R1a agonist with high GH-release selectivity, minimal cortisol/ACTH/prolactin stimulation. Research: GH pulse amplitude, synergistic GH release with GHRH analogs, IGF-1 axis regulation, anti-aging/body composition models.
 
 GHRP-2 5mg — $36.00
 Form: Injectable (lyophilized powder)
-URL: https://p1peptides.com/products/ghrp-2-5mg
+URL: https://p1peptides.com/products/ghrp-2
 Research: Synthetic hexapeptide GHS-R1a agonist with ghrelin-mimetic properties. Research: GH secretagogue biology, ghrelin receptor signaling, appetite regulation, synergistic GH release with GHRH analogs. Also known as KP-102, Pralmorelin.
 
 IGF-1 LR3 1mg — $110.00
 Form: Injectable (lyophilized powder)
-URL: https://p1peptides.com/products/igf-1-lr3-1mg
+URL: https://p1peptides.com/products/igf-1-lr3
 Research: Recombinant IGF-1 analog with Arg3 substitution + 13-aa N-terminal extension; reduces IGFBP binding dramatically extending half-life. Research: IGF-1R signaling, myoblast proliferation/differentiation, PI3K/Akt/mTOR pathway, satellite cell activation, anti-apoptotic signaling. Also known as Long R3 IGF-1, [Arg3]-IGF-I.
 
 --- SEXUAL HEALTH & REPRODUCTIVE BIOLOGY ---
 
 PT-141 (Bremelanotide) 10mg — $55.00
 Form: Injectable (lyophilized powder)
-URL: https://p1peptides.com/products/pt-141-bremelanotide-10mg
+URL: https://p1peptides.com/products/pt-141
 Research: Cyclic heptapeptide, non-selective agonist at melanocortin receptors MC3R and MC4R. Acts centrally via hypothalamic melanocortin pathways (unlike PDE5 inhibitors). Research: MC3R/MC4R signaling, hypothalamic sexual behavior pathways, melanocortin system biology, CNS arousal mechanisms, dopaminergic pathway interaction.
 
 Kisspeptin 10mg — Contact for pricing
 Form: Injectable (lyophilized powder)
-URL: https://p1peptides.com/products/kisspeptin-10mg
+URL: https://p1peptides.com/products/kisspeptin
 Research: Neuropeptide acting on KISS1R (GPR54). Central role in GnRH pulse regulation and HPG axis. Research: GnRH pulse regulation, HPG axis (hypothalamic-pituitary-gonadal), puberty onset, LH/FSH signaling, reproductive biology, KISS1R receptor pharmacology. Also known as Metastin, KiSS-1 peptide.
 
 --- COGNITIVE & NEUROPROTECTIVE PEPTIDES ---
 
 Selank 10mg — $55.00
 Form: Injectable (lyophilized powder)
-URL: https://p1peptides.com/products/selank-10mg
+URL: https://p1peptides.com/products/selank
 Research: Synthetic heptapeptide derived from Tuftsin with Pro-Gly-Pro extension. Studied for anxiolytic and nootropic properties. Research: GABA-A receptor modulation, serotonergic system, BDNF expression & neuroplasticity, anxiolytic behavior modeling, immune modulation (IL-6, IL-4), memory & cognitive enhancement. Also known as TP-7, Anxiolytic peptide.
 
 Semax 10mg — $85.00
 Form: Injectable (lyophilized powder)
-URL: https://p1peptides.com/products/semax-10mg
+URL: https://p1peptides.com/products/semax
 Research: Synthetic heptapeptide analog of ACTH(4-7) fragment with Pro-Gly-Pro extension. Research: BDNF & VEGF upregulation, neuroprotection in ischemia models, dopamine & serotonin system modulation, HIF-1α & neurotrophin signaling, neurogenesis & brain plasticity, cognitive performance & learning models.
 
 --- LONGEVITY, ANTI-AGING & IMMUNOLOGY ---
@@ -156,7 +162,7 @@ Research: 28-amino acid acetylated immunomodulatory peptide. Research: TLR-2/4/9
 
 Methylene Blue (10mg × 60 Capsules) — $110.00
 Form: Oral capsule
-URL: https://p1peptides.com/products/methylene-blue-10mg-x-60-capsules
+URL: https://p1peptides.com/products/methylene-blue
 Research: Phenothiazine-class redox-cycling agent; alternative electron carrier in mitochondrial ETC. Research: mitochondrial function & Complex IV, ROS modulation, MAO inhibition, tau protein aggregation modeling, NOS inhibition, neuroprotection, autophagy & mitophagy. Also known as Methylthioninium chloride.
 
 L-Glutathione (600mg × 60 Capsules) — $60.00
