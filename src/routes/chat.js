@@ -74,8 +74,8 @@ router.post('/chat', async (req, res) => {
   } catch (err) {
     console.error('Chat error:', err?.message || err);
     const userMsg = err?.status === 429
-      ? 'The AI service is temporarily busy. Please try again in a moment.'
-      : 'Something went wrong. Please try again.';
+      ? 'I\'m a little busy right now — please try again in a moment!'
+      : 'I\'m having trouble responding right now. Please try again, or email us at support@p1peptides.com and we\'ll be happy to help.';
     res.status(500).json({ error: userMsg });
   }
 });
